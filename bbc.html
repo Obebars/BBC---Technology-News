@@ -1,0 +1,521 @@
+<html>
+<head>
+<title>Technology - BBC News</title>
+<style type="text/css">
+
+body{
+   margin:0;
+   padding:0;
+   font-family:arial,helvetica,freesans,sans-serif;
+}
+
+a{
+   text-decoration:none;
+   color:black;
+   font-weight:bold;
+}
+a:hover{
+   text-decoration:underline;
+}
+
+.clear{
+   clear:both;
+} 
+
+#topbar{
+   width:1000px;
+   margin:0 auto;
+   padding:0;
+   height:40px;
+}
+#logo{
+   width:82px;
+   margin-top:8px;
+   float:left;
+   margin-right:8px;
+}
+.topbar-sections{
+   float:left;
+   border-left:1px #CCCCCC solid;
+   height:100%;
+}
+#signin-text{
+   height:100%;
+   width:70px;
+   margin-right:60px;
+   padding-left:40px;
+   font-size:13px;
+   font-style:normal;
+   font-weight:700;
+}
+#signin-link{
+   text-decoration:none;
+   position:relative;
+   top:11px;
+}     
+#signin-link:hover{
+   text-decoration:underline;
+}
+#wigglyline{
+   float:left;
+}
+#news{
+   float:left;
+   height:100%;
+   width:30px;
+   margin-right:7px;
+   padding:11px 8px;
+   font-size:13px;
+   font-style:normal;
+   font-weight:700;
+   color:#333;
+}
+.topbar-followup{
+   margin-right:19px;
+   position:relative;
+   left:10px;
+   top:12px;
+   font-size:13px;
+   font-style:normal;
+   font-weight:700;
+}
+#tv{
+   width:40px;
+   float:left;
+   position:relative;
+   left:9px;
+   top:12px;
+   font-size:13px;
+   font-weight:700;
+   font-style:normal;
+}
+#more{
+   width:90px;
+   float:left;
+   position:relative;
+   left:9px;
+   top:12px;  
+   font-size:13px;
+   font-weight:700;
+   font-style:normal;
+}   
+
+#search-bar{
+   background-color:#E4E4E4;
+   float:left;
+   position:relative;
+   left:9px;
+   top:7px;
+   border:none;
+   height:25px;
+   width:200px;
+   padding-left:5px;
+   font-weight:bold;
+}
+
+#magnifying-glass{
+   position:relative;
+   left:-18px;
+   top:8px;
+}
+
+#second-bar{
+   width:1000px;
+   margin:0 auto;
+   color:white;
+   position:relative;
+   top:6px;
+}
+#second-bar-container{
+   width:100%;
+   height:60px;
+   background-color:#BB1919;
+   position:relative;
+   top:-26px;
+}
+h1{
+   margin:0;
+   padding:0;
+   font-weight:lighter;
+   font-size:40px;
+   font-family:arial;
+}
+#localnews-bar{
+   float:right;
+   border:1px solid #BB4545;
+   position:relative;
+   top:-37px;
+   left:-60px;
+   width:175px;
+   height:31px;
+}
+#localnews-bar a{
+   text-decoration:none;
+   font-size:19px;
+   color:white;
+   padding-left:12px;
+   position:relative;
+   top:5px;
+   font-family:arial;
+   font-weight:lighter;
+}
+#localnews-bar a:hover{
+   text-decoration:underline;
+}
+
+#third-bar-container{
+   width:100%;
+   height:33px;
+   background-color:#A91717;
+   position:relative;
+   top:-46px;
+}
+#third-bar{
+   width:100%
+   margin:0;
+   position:relative;
+   top:3px;
+}
+#home-link{
+   color:white;
+   border-right: 1px solid #BB4545;
+   float:left;
+   position:relative;
+   left:185px;
+   top:5px;
+   font-weight:normal;
+   padding-right:10px;
+   font-size:14.2px;
+   font-family:arial;
+}
+.third-bar-links{
+   color:white;
+   border-right: 1px solid #BB4545;
+   float:left;
+   position:relative;
+   left:185px;
+   top:5px;
+   font-weight:normal;
+   padding-right:10px;
+   padding-left:10px;
+   font-size:14.2px;
+   font-family:arial;
+}
+#more-link{
+   color:white;
+   float:left;
+   position:relative;
+   left:185px;
+   top:5px;
+   font-weight:normal;
+   padding-left:10px;
+   font-size:14.2px;
+   font-family:arial;
+}
+#down-arrow{
+   position:relative;
+   left:187px;
+   top:3px;
+}
+
+#page-container{
+   width:1000px;
+   margin:0 auto;
+   position:relative;
+   top:-55px;
+   font-family:arial;
+   font-weight:lighter;
+}
+
+#main-article{
+float:left;
+}
+#technology-title{
+   text-decoration:underline;
+   border-bottom: 3px solid #a91717;
+   font-weight:lighter;
+   width:95px;
+}
+#article-container{
+   float:left;
+   width:640px;
+   position:relative;
+   top:-18px;
+   border-right:1px solid #cccccc;  
+   padding:0;
+   margin:0;
+}
+h2 a{
+   font-size:30px;
+   color:#686868;
+}
+h2 a:hover{
+   color:#1167a8;
+   text-decoration:none;
+}
+#article-summary{
+   position:relative;
+   top:-25px;
+   color:#5a5a5a;
+   font-size:14.5px;
+   float:left;
+   width:270px;
+   line-height:1.4;
+}
+
+#article-timing{
+   font-size:14;
+   position:relative;
+   top:-5px;
+   left:20px;
+   margin-bottom:0;
+}
+#technology-link{
+   color:#a61b1b;
+   border-left:1px solid #CCCCCC;
+   padding-left:5px;
+   font-weight:lighter;
+}
+#technology-link:hover{
+   color:#1167a8;
+   text-decoration:none;
+}
+#article-hr{
+   border-top:1px solid #a91717;
+   width:40px;
+}
+#article-links{
+   line-height:1.0;
+}
+#article-links a{
+   text-decotation:none;
+   font-size:13px;
+   color:#686868;
+}
+#article-links a:hover{
+   text-decoration:none;
+   color:#1167a8;
+}
+#asda-image{
+   width:370px;
+   position:relative;
+   left:-20px;
+   top:-10px;
+}
+
+#topright-column{
+   float:right;
+   width:280px;
+   margin-left:5px;
+   Position:relative;
+   left:-65px;
+}
+#topright-column h2{
+   color:#404040;
+   font-weight:lighter;
+   padding-top:40px;
+}
+.side-images{
+   float:left;
+   width:105px;
+   height:60px;
+}
+#side-summary-1{ 
+   float:right;
+   position:relative;
+   width:180px;
+   top:-75px;
+   left:15px;
+   font-weight:bold;
+   height:15px;
+}
+#side-summary-1 a{
+   text-decoration:none;
+}
+#side-summary-1 a:hover{
+   text-decoration:none;
+   color:#1167a8;
+}
+#side-date-1{
+   font-weight:lighter;
+   position:relative;
+   left:15px;
+   top:-8px;
+   font-size:13px;
+   color:#5a5a5a;
+}
+.side-summary{
+   float:right;
+   position:relative;
+   width:185px;
+   top:-75px;
+   left:19px;
+   font-weight:bold;
+   height:35px;
+}
+.side-summary a{
+    text-decoration:none;
+}
+.side-summary a:hover{
+   text-decoration:none;
+   color:#1167a8;
+}
+
+.side-dates{
+   font-weight:lighter;
+   position:relative;
+   left:15px;
+   top:-8px;
+   font-size:13px;
+   color:#5a5a5a;
+   border-right:1px solid #CCCCCC;
+   width:105px !important;
+}
+.side-links{
+   text-decotation:none;
+   font-size:13px;
+   color:#a61b1b;
+   position:relative;
+   top:-15px;
+   font-weight:lighter;
+}
+.side-links:hover{
+   text-decoration:none;
+   color:#1167a8;
+}
+   
+
+</style>
+</head>
+
+<body>
+
+<div id="topbar"> 
+
+<img id="logo" src="images/bbc-logo.png"/> 
+
+<div id="signin-text" class="topbar-sections">
+<a id="signin-link" href="https://account.bbc.com/signin">Sign in</a>
+</div>
+ 
+ <div id="wigglyline"> 
+ <img src="images/wigglyline.png"/>
+</div>
+
+<div id="news"> 
+<a href="https://www.bbc.co.uk/news"> News </a>
+</div>
+
+<div class="topbar-sections">
+<a class="topbar-followup" href="http://www.bbc.co.uk/sport"> Sports </a>
+</div>
+
+<div class="topbar-sections">
+<a class="topbar-followup" href="https://www.bbc.co.uk/weather"> Weather </a>
+</div>
+
+<div class="topbar-sections">
+<a class="topbar-followup" href="https://www.bbc.co.uk/iplayer"> Iplayer </a>
+</div>
+
+<div class="topbar-sections">
+<a id="tv" href="https://www.bbc.co.uk/tv"> TV </a>
+</div>
+
+<div class="topbar-sections">
+<a class="topbar-followup" href="https://www.bbc.co.uk/radio/"> Radio </a>
+</div>
+
+<div class="topbar-sections">
+<a id="more" href="https://www.bbc.co.uk/news/technology#orb-footer"> More </a>
+</div>
+
+<div class="topbar-sections">
+<input id="search-bar" type="text" placeholder="Search"/>
+<input type="image" id="magnifying-glass" src="images/magnifying-glass.png"/>
+</div>
+
+</div>
+
+<div class="clear"> </div>
+
+<div id="second-bar-container"> 
+
+<div id="second-bar">
+
+<h1>NEWS<h1>
+<div id="localnews-bar">
+<a href="">Find local news</a>
+</div>
+</div>
+
+</div>
+
+<div class="clear"> </div>
+
+<div id="third-bar-container">
+<div id="third-bar">
+<a id="home-link" href=""> Home </a>
+<a class="third-bar-links" href=""> UK </a>
+<a class="third-bar-links" href=""> World </a>
+<a class="third-bar-links" href=""> Business </a>
+<a class="third-bar-links" href=""> Politics </a>
+<a class="third-bar-links" href=""> Tech </a>
+<a class="third-bar-links" href=""> Science </a>
+<a class="third-bar-links" href=""> Health </a>
+<a class="third-bar-links" href=""> Education </a>
+<a class="third-bar-links" href=""> Entertainment & Arts </a>
+<a class="third-bar-links" href=""> Video & Audio </a>
+<a id="more-link" href=""> More </a>
+<img id="down-arrow" src="images/down-arrow.png"/>
+</div>
+</div>
+
+<div class="clear"> </div>
+
+<div id="page-container"> 
+<div id="main-article">
+<h3 id="technology-title"> Technology </h3>
+<div id="article-container">
+<h2> <a href=""> Asda bug exposed payment details </a> </h2> 
+<div id="article-summary"> 
+<p>Security vulnerabilities that put <br/> customers at risk have affected <br/> Asda's website for a couple of years,<br/> a security expert has revealed.</p>
+<p id="article-timing"> 2 hours ago <a id="technology-link" href=""> Technology </a> </p>
+<hr id="article-hr" align="left"/>
+<div id="article-links">
+<p><a href=""> Surveillance firm hit in hack attack </a> </p>
+<p><a href=""> eBay flaw has existed for months </a> </p> 
+</div>
+</div>
+<img id="asda-image" src="images/asda-pic.png"/>
+</div>
+
+</div>
+
+<div id="topright-column">
+
+<h2>Watch/Listen</h2>
+
+<img class="side-images" src="images/science-chief.png"/>
+<div id="side-summary-1">
+<p> <a href=""> UK science chief backs blockchains </a></p>
+<p id="side-date-1"> 1 hour ago </p>
+</div>
+<img class="side-images" src="images/drone.png"/>
+<div class="side-summary">
+<p> <a href=""> Drone register gives 'accountability' </a></p>
+<p class="side-dates"> 18 January 2016 </p>
+<a class="side-links" href=""> Technology <a/>
+</div>
+<img class="side-images" src="images/Spacex.png"/>
+<div class="side-summary">
+<p> <a href=""> SpaceX rocket explodes during landing </a></p>
+<p class="side-dates"> 18 January 2016 </p>
+<a class="side-links" href=""> Science & Environment <a/>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
